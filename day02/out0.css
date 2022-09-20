@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-color: rgb(255, 255, 166);
+    color: rgb(116, 193, 116);
+}
+h3{
+    color: rgb(126, 126, 230);
+}
+button{
+    background-color: rgb(184, 233, 217);
+    color: rgb(103, 103, 170);
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+input{
+    text-align: center;
+    background-color: honeydew;
+}

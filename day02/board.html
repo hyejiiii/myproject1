@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 연습문제t</title>
+    <link rel="stylesheet" href="board.css">
+    <style>
+      #go{
+         background-color: rgb(192, 230, 217);
+      }
+      .sort{
+         background-color: rgb(181, 212, 212);
+      }
+      .main{
+         background-color: rgb(143, 171, 198);
+         color: white;
+      }
+      button:hover{
+         text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table border="0">
+         <tr align="center">
+            <td class="sort">항목</td>
+            <td colspan="2" class="sort">입력</td>
+         </tr>
+         <tr>
+            <td class="main">번호</td>
+            <td><input type="number" name="number"></td>
+         </tr>
+         <tr>
+            <td class="main">제목</td>
+            <td><input type="text" name="title"></td>
+         </tr>
+         <tr>
+            <td class="main">내용</td>
+            <td><input type="text" name="content"></td>
+         </tr>
+         <tr>
+            <td class="main">작성자</td>
+            <td><input type="text" name="name"></td>
+         </tr>
+         <tr>
+            <td colspan="3" align="center" id="go"><button style="border: 0px">글쓰기 완료</button></td>
+         </tr>
+        </table>
+    </form>
+</body>
+</html>

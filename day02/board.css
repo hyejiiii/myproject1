@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    background-color: rgb(175, 201, 224);
+    color: rgb(105, 92, 111);
+}
+button{
+    background-color: rgb(196, 233, 184);
+    color: rgb(98, 79, 104);
+    font-size: 15px;
+    font-weight: bold;
+}
+input{
+    text-align: center;
+    background-color: rgb(181, 212, 226);
+    color: rgb(255, 255, 255);
+}
