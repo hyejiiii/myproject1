@@ -1,30 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 연습문제t</title>
-    <link rel="stylesheet" href="board.css">
-    <style>
-      #go{
-         background-color: rgb(192, 230, 217);
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS 연습문제</title>
+   <style>
+      div {
+         font-size: 15px;
+         font-weight: bold;
+         color: blue;
       }
-      .sort{
-         background-color: rgb(181, 212, 212);
+
+      #total {
+         width: 800px;
+         height: 800px;
+         background: lightblue;
       }
-      .main{
-         background-color: rgb(143, 171, 198);
-         color: white;
+
+      #top {
+         width: 800px;
+         height: 100px;
+         background: lightcoral;
+         padding: 2px;
       }
-      button:hover{
-         text-decoration: underline;
+
+      #center {
+         width: 800px;
+         height: 500px;
+         padding: 30px;
+         /* 안쪽 여백 4군데 설정 */
       }
-    </style>
+
+      li {
+         list-style: none;
+         float: left;
+         padding: 15px;
+         width: 70px;
+         height: 20px;
+         border-radius: 50px;
+         /* background: yellow; */
+      }
+
+      /* ul의 li가 child! child 중에서 몇번째인지 지정 */
+      li:nth-child(2n) {
+         background: orange;
+      }
+
+      li:nth-child(2n+1) {
+         background: yellow;
+      }
+
+      /* li:first-child{
+          border-radius: 50px 0 0 50px;
+      }
+      li:last-child{
+          border-radius: 0 50px 50px 0;
+      } */
+      #top2 {
+         background-color: black;
+         color: yellow;
+         border-radius: 100px 10px;
+         width: 250px;
+         height: 100px;
+         position: fixed;
+         top: 5px;
+         right: 5px;
+      }
+   </style>
 </head>
+
 <body>
-    <form action="">
-        <table border="0">
+   <form action="">
+      <table border="0">
          <tr align="center">
             <td class="sort">항목</td>
             <td colspan="2" class="sort">입력</td>
@@ -48,7 +97,8 @@
          <tr>
             <td colspan="3" align="center" id="go"><button style="border: 0px">글쓰기 완료</button></td>
          </tr>
-        </table>
-    </form>
+      </table>
+   </form>
 </body>
+
 </html>
