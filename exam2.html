@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function idCheck() {
+            id = document.getElementById('id').value
+
+            if (id.length >= 5) {
+                result = '사용 가능 아이디.'
+            } else {
+                result = '5글자 이상 입력하세요.'
+            }
+
+            d1 = document.getElementById('d1')
+            d1.innerHTML = result
+        }
+        function pwCheck() {
+            pw1 = document.getElementById('pw1').value
+            pw2 = document.getElementById('pw2').value
+
+            if (pw1==pw2){
+                result2 = '일치'
+            } else {
+                result2 = '불일치'
+            }
+
+            d2 = document.getElementById('d2')
+            d2.innerHTML = result2
+        }
+    </script>
+</head>
+<body>
+    아이디: <input type="text" id="id">
+    <button onclick="idCheck()" style="background: pink;">글자수 체크</button><br>
+    패스워드: <input type="text" id="pw1"><br>
+    패스워드2: <input type="text" id="pw2"><br>
+    <button onclick="pwCheck()" style="background: green;">패스워드 동일</button>
+    <hr>
+    <div id = 'd1'></div>
+    <div id = 'd2'></div>
+</body>
+</html>
